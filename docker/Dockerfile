@@ -1,4 +1,4 @@
 FROM adoptopenjdk/openjdk11
 COPY *.jar app.jar
 COPY config/application.properties application.properties
-EXPOSE 8081
+EXPOSE 8080
