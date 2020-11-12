@@ -1,0 +1,11 @@
+version: '3'
+services:
+ acme:
+  container_name: acme_flights
+  image: acme/flights
+  build: .
+  ports:
+   - "${LOCAL_PORT}:8080"
+  volumes:
+   - ${LOCAL_LOG_PATH}:${LOG_PATH}
+  command: java -DlogPath="${LOG_PATH}" -DlogLevel="${LOG_LEVEL}" -jar /app.jar

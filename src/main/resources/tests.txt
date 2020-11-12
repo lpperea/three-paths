@@ -1,0 +1,20 @@
+POST /newFlight
+http://localhost:8080/lpp.exercise/newFlight
+{
+  "route" : {
+      "airlineId": 328,
+      "destinationAirportId": 1,
+      "sourceAirportId": 5,
+      "airline": "",
+      "sourceAirport": "",
+      "destinationAirport": "",
+      "codeshare": "",
+      "stops": 15,
+      "equipment": "318"
+  },
+
+  "departureDate": "2020-11-05T16:12:02Z",
+  "flightCode": "LPPANY",
+  "price": 321,
+  "seatAvailability": 11
+}
