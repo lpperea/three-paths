@@ -1,6 +1,6 @@
 version: '3'
 services:
- acme:
+ paths:
   container_name: tree_paths
   image: paths
   build: .
